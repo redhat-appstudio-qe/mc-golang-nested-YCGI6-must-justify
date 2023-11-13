@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: componentb-devfile-sample-go-basic-private-devfile-nested-ttld
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ilej-tenant/mc-golang-nested/componentb-devfile-sample-go-basic-private-devfile-nested-ttld@sha256:b595710838f609e408f0fdb1b87b07da92e8e9124c3ffe276287d5facb0a03b7
+        name: my-go
+        resources: {}
+status: {}
